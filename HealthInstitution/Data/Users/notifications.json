@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Text": "NEW URGENT APPOINTMENT. You have new urgent appointment scheduled for HealthInstitution.Class.Timeslot instead of the appointment at HealthInstitution.Class.Timeslot",
+    "Isread": false,
+    "Username": "doctor",
+    "Time": "2023-05-11T15:02:10.4198091+02:00"
+  },
+  {
+    "Id": 2,
+    "Text": "RESCHEDULED APPOINTMENT. Your appointment at HealthInstitution.Class.Timeslot is canceled. Your new appointment is scheduled for HealthInstitution.Class.Timeslot",
+    "Isread": false,
+    "Username": "tijana1234",
+    "Time": "2023-05-11T15:02:10.4222374+02:00"
+  },
+  {
+    "Id": 3,
+    "Text": "NEW URGENT APPOINTMENT. You have new urgent appointment scheduled for 4:45 PM",
+    "Isread": true,
+    "Username": "d",
+    "Time": "2023-05-11T15:16:28.4823865+02:00"
+  },
+  {
+    "Id": 4,
+    "Text": "NEW URGENT APPOINTMENT. You have new urgent appointment scheduled for 18:15",
+    "Isread": true,
+    "Username": "d",
+    "Time": "2023-05-11T18:01:38.5880272+02:00"
+  },
+  {
+    "Id": 5,
+    "Text": "NEW URGENT APPOINTMENT. You have new urgent appointment scheduled for 11:15 PM",
+    "Isread": false,
+    "Username": "d",
+    "Time": "2023-05-11T23:10:08.0122116+02:00"
+  }
+]

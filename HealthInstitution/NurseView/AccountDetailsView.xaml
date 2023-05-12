@@ -1,0 +1,167 @@
+﻿<Window x:Class="HealthInstitution.NurseView.AccountDetailsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.NurseView"
+        mc:Ignorable="d"
+        Title="Account Details View" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="60*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Name="NameL" Content="NAME: " FontSize="16" VerticalAlignment="Center"/>
+                    <TextBox Name="NameT" Grid.Column="1" Text="{Binding NameP, Mode=TwoWay}" Margin="0,5,10, 5"/>
+
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Name="SurnameL" Content="SURNAME: " FontSize="16" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="1" Name="SurnameT" Text="{Binding Surname, Mode=TwoWay}" Margin="0,5,10, 5"/>
+
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Name="UsernameL" Content="USERNAME: " FontSize="16" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="1" Name="UsernameT" Text="{Binding Username, Mode=TwoWay}" Margin="0,5,10, 5" IsReadOnly="true"/>
+
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Name="PasswordL" Content="PASSWORD: " FontSize="16" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="1" Name="PasswordT" Text="{Binding Password, Mode=TwoWay}" Margin="0,5,10, 5"/>
+
+                </Grid>
+                
+                
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" Name="WeightL" Content="WEIGHT: " FontSize="16" VerticalAlignment="Center"/>
+                    <TextBox Grid.Column="1" Name="WeightT" Text="{Binding Weight, Mode=TwoWay}" Margin="0,5,10,5"/>
+
+                </Grid>
+
+                <Grid Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    
+                    
+                    <Label  Grid.Column="0" Name="HeightL" Content="HEIGHT: " FontSize="16"/>
+                    <TextBox Grid.Column="1" Name="HeightT" Text="{Binding HeightP}" Margin="0,5,10, 5"/>
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="1" Content="Add Disease" Margin="0,5,10, 5" FontSize="12" Name="AddDiseaseButton" Click="AddDiseaseButton_Click"/>
+                <TextBox Grid.Row="0" Grid.Column="0" Name="DiseaseInputT" Margin="0,5,10, 5"/>
+
+                <Button Grid.Row="0" Grid.Column="3" Content="Add Allergy" Margin="0,5,10, 5" FontSize="12" Name="AddAllergyButton" Click="AddAllergyButton_Click"/>
+                <TextBox Grid.Row="0" Grid.Column="2" Margin="0,5,10, 5" Name="AllergyInputT" />
+
+                <ListBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="0,5,10, 5" Name="DiseaseHistoryListBox" ItemsSource="{Binding DiseaseHistory}"/>
+
+                <ListBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="0,5,10, 5" Name="AllergiesListBox" ItemsSource="{Binding Allergies}"/>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="10">
+            <DataGrid SelectionChanged="AppointmentsTable_SelectionChanged" CanUserSortColumns="False" Name="AppointmentsTable" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False"
+                      ItemsSource="{Binding AppointmentTableItems}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
+                    <DataGridTextColumn Header="Doctor Name" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="Doctor Surname" Binding="{Binding Surname}" Width="*"/>
+                    <DataGridTextColumn Header="Specialization" Binding="{Binding DoctorSpecialization}" Width="*"/>
+                    <DataGridTextColumn Header="Date" Binding="{Binding StartDate}" Width="*"/>
+                    <DataGridTextColumn Header="Time" Binding="{Binding StartTime}" Width="*"/>
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+                    <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="ShowAnamnesisButton" Content="Start Admission" Margin="10, 5, 50, 5" Click="ShowAnamnesisButton_Click"/>
+            <Button Grid.Column="2" x:Name="SubmitButton" Content="Submit" Margin="60, 5, 0, 5" Click="SubmitButton_Click"/>
+            <Button Grid.Column="3" x:Name="CancelButton" Content="Cancel" Margin="50, 5, 10, 5" Click="CancelButton_Click"/>
+        </Grid>
+    </Grid>
+           
+
+
+            
+
+            
+        
+</Window>
+   
+

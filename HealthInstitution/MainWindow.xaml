@@ -1,0 +1,32 @@
+﻿<Window x:Class="HealthInstitution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Log In" Height="450" Width="740" WindowStartupLocation="CenterScreen"
+        UseLayoutRounding="True"
+        ResizeMode="NoResize">
+    <Grid>
+        <Image Margin="-14,0,-14,0">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="800" UriSource="/Images/login.jpg" />
+            </Image.Source>
+        </Image>
+        <Button
+            Name="LoginButton"
+            Content="Log in"
+            FontSize="18"
+            Width="120"
+            Height="30"
+            Margin="350,250,0,0"
+            Background="Snow"
+        ></Button>
+        <TextBox Name="Username" HorizontalAlignment="Left" Margin="440,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="26" FontSize="16"/>
+        <TextBox Name ="Password" HorizontalAlignment="Left" Margin="440,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="26" FontSize="16"/>
+        <Label Content="Welcome, please login..." HorizontalAlignment="Left" Margin="370,34,0,0" VerticalAlignment="Top" FontSize="30" Foreground="Snow"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="440,125,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="440,200,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Name="IncorrectText" Visibility="Hidden" Content="Username or password is incorrect" HorizontalAlignment="Left" Margin="430,284,0,0" VerticalAlignment="Top" FontSize="14" Foreground="Red"/>
+    </Grid>
+</Window>

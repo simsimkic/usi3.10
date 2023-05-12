@@ -1,0 +1,125 @@
+﻿<Window x:Class="HealthInstitution.NurseView.AnamnesisView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.NurseView"
+        mc:Ignorable="d"
+        Title="AnamnesisView" Height="450" Width="800"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" BorderBrush="Gray" BorderThickness="2" Margin="5">
+            <Grid Grid.RowSpan="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Doctor's report" TextAlignment="Center" FontSize="20" />
+                <TextBox  Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" x:Name="DoctorReport" AcceptsReturn="True" Margin="5"/>
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" BorderBrush="Gray" BorderThickness="2" Margin="5">
+            <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="Symptoms" TextAlignment="Center" FontSize="20"/>
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Width="85" HorizontalAlignment="right" Content="Add" x:Name="AddSymptomButton" Click="AddSymptomButton_Click"  Margin="5"/>
+                    <Button Grid.Column="0" Width="85" HorizontalAlignment="left" Content="Delete" x:Name="DeleteSymptomButton" Click="DeleteSymptomButton_Click" Margin="5"/>
+                    
+                    <TextBox Grid.Column="1" x:Name="NewSymptomT" Margin="5"/>
+                </Grid>
+
+                <ListBox Grid.Row="2" Grid.Column="1" Grid.RowSpan="5" x:Name="SymptomsListBox" ItemsSource="{Binding Symptoms}" Margin="5"/>
+
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="5" Grid.Column="0" Grid.RowSpan="5" Margin="5" BorderBrush="Gray" BorderThickness="2">
+            <Grid Grid.Row="5" Grid.Column="0" Grid.RowSpan="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Diseases" TextAlignment="Center" FontSize="20"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Width="85" HorizontalAlignment="right" Content="Add" x:Name="AddDiseaseButton" Click="AddDiseaseButton_Click" Margin="5"/>
+                    <Button Grid.Column="0" Width="85" HorizontalAlignment="left" Content="Delete" x:Name="DeleteDiseaseButton" Click="DeleteDiseaseButton_Click" Margin="5"/>
+                    <TextBox Grid.Column="1" x:Name="NewDiseaseT" Margin="5"/>
+                </Grid>
+
+                <ListBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="3" x:Name="DiseasesListBox" ItemsSource="{Binding Diseases}" Margin="5"/>
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="5" Grid.Column="1" Grid.RowSpan="5" BorderBrush="Gray" BorderThickness="2" Margin="5">
+            <Grid Grid.Row="5" Grid.Column="1" Grid.RowSpan="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Allergies" TextAlignment="Center" FontSize="20"/>
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Width="85" Content="Add" HorizontalAlignment="right" x:Name="AddAllergyButton" Click="AddAllergyButton_Click" Margin="5"/>
+                    <Button Grid.Column="0" Width="85" HorizontalAlignment="left" Content="Delete" x:Name="DeleteAllergyButton" Click="DeleteAllergyButton_Click" Margin="5"/>
+                    <TextBox Grid.Column="1" x:Name="NewAllergyT" Margin="5"/>
+                </Grid>
+
+                <ListBox Grid.Row="2" Grid.RowSpan="3" x:Name="AllergiesListBox" ItemsSource="{Binding Allergies}" Margin="5"/>
+
+            </Grid>
+        </Border>
+        
+        
+        <Button Grid.Row="10"  Grid.Column="0" Content="Submit" x:Name="SubmitButton" Click="SubmitButton_Click" FontSize="16" Margin="210, 5, 10, 5"/>
+        <Button Grid.Row="10" Grid.Column="1" Content="Close" x:Name="CloseButton" Click="CloseButton_Click" FontSize="16" Margin="10, 5, 210, 5"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\filter.png" />
+    <None Remove="Images\login.jpg" />
+    <None Remove="Images\login.jpg.crdownload" />
+    <None Remove="Images\patient.png" />
+    <None Remove="Images\user.png" />
+    <None Remove="Images\user3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\filter.png" />
+    <Resource Include="Images\login.jpg" />
+    <Resource Include="Images\patient.png" />
+    <Resource Include="Images\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

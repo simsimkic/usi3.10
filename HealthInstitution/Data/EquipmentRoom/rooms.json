@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "Warehouse",
+    "Number": 101
+  },
+  {
+    "Type": "OperationRoom",
+    "Number": 201
+  },
+  {
+    "Type": "OperationRoom",
+    "Number": 202
+  },
+  {
+    "Type": "ExaminationRoom",
+    "Number": 301
+  },
+  {
+    "Type": "ExaminationRoom",
+    "Number": 302
+  },
+  {
+    "Type": "ExaminationRoom",
+    "Number": 303
+  },
+  {
+    "Type": "ExaminationRoom",
+    "Number": 304
+  },
+  {
+    "Type": "PatientRoom",
+    "Number": 401
+  },
+  {
+    "Type": "PatientRoom",
+    "Number": 402
+  },
+  {
+    "Type": "PatientRoom",
+    "Number": 403
+  },
+  {
+    "Type": "PatientRoom",
+    "Number": 404
+  },
+  {
+    "Type": "WaitingRoom",
+    "Number": 501
+  }
+]

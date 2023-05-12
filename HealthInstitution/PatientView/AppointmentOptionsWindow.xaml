@@ -1,0 +1,42 @@
+﻿<Window x:Class="HealthInstitution.PatientView.AppointmentOptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.PatientView"
+        mc:Ignorable="d"
+        Title="Choose an Appointment" Height="350" Width="600" WindowStartupLocation="CenterScreen"
+        UseLayoutRounding="True"
+        ResizeMode="NoResize">
+    <Grid>
+
+        <TextBlock Text="Scheduling an examination that meets your criteria is not possible. Here are some suggestions instead." HorizontalAlignment="Center" 
+               Margin="0,20,0,0" VerticalAlignment="Top" FontSize="15" Height="54" Width="581" TextWrapping="Wrap"/>
+        
+        <Label Content="Select the appointment that you wish to schedule:" Margin="5,64,5,135" FontSize="15"/>
+        
+        <StackPanel Margin="10,110,10,57" RenderTransformOrigin="0.493,3.988" Name="Options">
+            <RadioButton FontSize="15" Name="Option0">opt0</RadioButton>
+            <RadioButton FontSize="15" Name="Option1">opt1</RadioButton>
+            <RadioButton FontSize="15" Name="Option2">op2</RadioButton>
+        </StackPanel>
+
+        <Button
+            Name="CompleteAction"
+            Content="Schedule selected examination"
+            Click="Confirm"
+            FontSize="12"
+            Margin="360,254,20,23"
+            Background="Snow"
+        />
+
+        <Button
+            Name="CancelButton"
+            Content="Cancel"
+            Click="CloseWindow"
+            FontSize="12"
+            Margin="30,254,465,23"
+            Background="Snow"
+        />
+    </Grid>
+</Window>

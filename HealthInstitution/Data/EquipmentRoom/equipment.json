@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1001,
+    "Name": "Chair",
+    "Type": "Furniture"
+  },
+  {
+    "Id": 1002,
+    "Name": "Table",
+    "Type": "Furniture"
+  },
+  {
+    "Id": 1003,
+    "Name": "Cabinet",
+    "Type": "Furniture"
+  },
+  {
+    "Id": 1004,
+    "Name": "Bed",
+    "Type": "Furniture"
+  },
+  {
+    "Id": 2001,
+    "Name": "Gauze",
+    "Type": "Operation"
+  },
+  {
+    "Id": 2002,
+    "Name": "Staples",
+    "Type": "Operation"
+  },
+  {
+    "Id": 2003,
+    "Name": "Bandage",
+    "Type": "Operation"
+  },
+  {
+    "Id": 2004,
+    "Name": "Injection",
+    "Type": "Operation"
+  },
+  {
+    "Id": 3001,
+    "Name": "Paper",
+    "Type": "Examination"
+  },
+  {
+    "Id": 3002,
+    "Name": "Pen",
+    "Type": "Examination"
+  }
+]

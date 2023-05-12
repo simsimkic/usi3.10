@@ -1,0 +1,95 @@
+[
+  {
+    "MedicalRecord": {
+      "Height": 102.0,
+      "Weight": 60.0,
+      "DiseaseHistory": [
+        "bolest1",
+        "bolest2",
+        "bolest 3",
+        "aaaaaaa",
+        "dddddddddd",
+        "cudnaBolest1",
+        "aaaa",
+        "probaa"
+      ],
+      "Allergies": [
+        "cudnaAlergija",
+        "alergija2",
+        "alergija3",
+        "bbb",
+        "proba2"
+      ]
+    },
+    "Blocked": true,
+    "Name": "Sonja",
+    "Surname": "Parabucki",
+    "Username": "p",
+    "Password": "p"
+  },
+  {
+    "MedicalRecord": {
+      "Height": 102.0,
+      "Weight": 10.0,
+      "DiseaseHistory": [
+        "b",
+        "sssss",
+        "wwwwww"
+      ],
+      "Allergies": [
+        "ffff"
+      ]
+    },
+    "Blocked": false,
+    "Name": "aa",
+    "Surname": "aa",
+    "Username": "a",
+    "Password": "a"
+  },
+  {
+    "MedicalRecord": {
+      "Height": 170.0,
+      "Weight": 60.0,
+      "DiseaseHistory": [
+        "aaaaa",
+        "probaaa",
+        "noviiii",
+        "wwwwww"
+      ],
+      "Allergies": [
+        "bbbb"
+      ]
+    },
+    "Blocked": false,
+    "Name": "Tijana",
+    "Surname": "Tijanic",
+    "Username": "tijana1234",
+    "Password": "tijana1234"
+  },
+  {
+    "MedicalRecord": {
+      "Height": 170.0,
+      "Weight": 60.0,
+      "DiseaseHistory": [],
+      "Allergies": []
+    },
+    "Blocked": false,
+    "Name": "Novica",
+    "Surname": "Novic",
+    "Username": "novica",
+    "Password": "novica"
+  },
+  {
+    "MedicalRecord": {
+      "Height": 170.0,
+      "Weight": 60.0,
+      "DiseaseHistory": [],
+      "Allergies": []
+    },
+    "Blocked": false,
+    "Name": "Olivera",
+    "Surname": "Oliveric",
+    "Username": "olivera",
+    "Password": "olivera"
+  }
+]

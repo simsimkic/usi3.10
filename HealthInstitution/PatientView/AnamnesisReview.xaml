@@ -1,0 +1,32 @@
+﻿<Window x:Class="HealthInstitution.PatientView.AnamnesisReview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.PatientView"
+        mc:Ignorable="d"
+        Title="Anamnesis Review" Height="450" Width="800">
+    <Grid>
+        <Label Name="SymptomsLbl" Content="Symptoms:" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" Height="30" Margin="25,19,0,0" FontSize="15"/>
+        <TextBox Name="Symptoms" Margin="25,52,0,0" IsReadOnly="True" Height="25" Width="735" ScrollViewer.CanContentScroll="True" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Name="DiseasesLbl" Content="Identified diseases:" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30" Margin="25,104,0,0" FontSize="15"/>
+        <TextBox Name="Diseases" Margin="25,139,0,0" IsReadOnly="True" Height="25" Width="735" ScrollViewer.CanContentScroll="True" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Name="AllergiesLbl" Content="Identified allergies:" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30" Margin="25,184,0,0" FontSize="15"/>
+        <TextBox Name="Allergies" Margin="25,219,0,0" IsReadOnly="True" Height="25" Width="735" ScrollViewer.CanContentScroll="True" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Name="ReportLbl" Content="Report:" VerticalAlignment="Top" HorizontalAlignment="Left" Height="30" Margin="25,254,0,0" FontSize="15"/>
+        <TextBox Name="Report" Margin="25,284,0,0" IsReadOnly="True" Height="90" Width="735" VerticalAlignment="Top" HorizontalAlignment="Left" ScrollViewer.CanContentScroll="True"/>
+
+        <Button
+            Name="CloseButton"
+            Content="Close"
+            Click="CloseWindow"
+            FontSize="15"
+            Margin="660,379,0,0"
+            Height="30"
+            Width="100"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Snow"
+        />
+    </Grid>
+</Window>

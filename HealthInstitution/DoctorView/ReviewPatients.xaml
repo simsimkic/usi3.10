@@ -1,0 +1,33 @@
+﻿<Window x:Class="HealthInstitution.DoctorView.ReviewPatients"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.DoctorView"
+        mc:Ignorable="d"
+        Title="Review Patients" Height="450" Width="800"  WindowStartupLocation="CenterScreen" UseLayoutRounding="True"
+        ResizeMode="NoResize">
+    <Grid>
+        <DataGrid Name="PatientsTable" Margin="67,50,67,100" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="*"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Surname" Binding="{Binding Surname}" Width="*"/>
+                <DataGridTextColumn Header="Blocked" Binding="{Binding Blocked}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button
+            Name="UpdateAppointmentButton"
+            Content="Show medical record"
+            FontSize="13"
+            Width="200"
+            Height="30"
+            Margin="-400,310,0,0"
+            Background="Snow" Click="ShowMedicalRecord"
+        />
+
+        <TextBox Name ="SearchBox"  FontSize="13" Margin="400,310,0,0" Height="30" Width="213" KeyUp="Search"/>
+        <TextBlock Text="Search"  FontSize="13" Margin="120,320,0,0" Width="50" Height="30" />
+    </Grid>
+</Window>

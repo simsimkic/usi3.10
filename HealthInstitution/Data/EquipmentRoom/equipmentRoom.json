@@ -1,0 +1,602 @@
+[
+  {
+    "RoomID": 101,
+    "EquipmentID": 1001,
+    "Quantity": 7
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 1001,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 1001,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 1001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 1001,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 1001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 1001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 1001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 1001,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 1001,
+    "Quantity": 4
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 1001,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 1001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 1002,
+    "Quantity": 4
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 1002,
+    "Quantity": 9
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 1002,
+    "Quantity": 4
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 1002,
+    "Quantity": 5
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 1002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 1002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 1002,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 1002,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 1002,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 1002,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 1002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 1002,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 1003,
+    "Quantity": 17
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 1003,
+    "Quantity": 12
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 1003,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 1003,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 1003,
+    "Quantity": 4
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 1003,
+    "Quantity": 8
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 1003,
+    "Quantity": 10
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 1003,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 1003,
+    "Quantity": 6
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 1003,
+    "Quantity": 7
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 1003,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 1003,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 1004,
+    "Quantity": 12
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 1004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 1004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 1004,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 1004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 1004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 1004,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 1004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 1004,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 1004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 1004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 1004,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 2001,
+    "Quantity": 9
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 2001,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 2001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 2001,
+    "Quantity": 4
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 2001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 2001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 2001,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 2001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 2001,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 2001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 2001,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 2001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 2002,
+    "Quantity": 8
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 2002,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 2002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 2002,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 2002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 2002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 2002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 2002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 2002,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 2002,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 2002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 2002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 2003,
+    "Quantity": 30
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 2003,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 2003,
+    "Quantity": 12
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 2003,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 2003,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 2003,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 2003,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 2003,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 2003,
+    "Quantity": 5
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 2003,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 2003,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 2003,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 2004,
+    "Quantity": 10
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 2004,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 2004,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 2004,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 3001,
+    "Quantity": 30
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 3001,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 3001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 3001,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 3001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 3001,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 3001,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 3001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 3001,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 3001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 3001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 3001,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 101,
+    "EquipmentID": 3002,
+    "Quantity": 6
+  },
+  {
+    "RoomID": 201,
+    "EquipmentID": 3002,
+    "Quantity": 0
+  },
+  {
+    "RoomID": 202,
+    "EquipmentID": 3002,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 301,
+    "EquipmentID": 3002,
+    "Quantity": 4
+  },
+  {
+    "RoomID": 302,
+    "EquipmentID": 3002,
+    "Quantity": 10
+  },
+  {
+    "RoomID": 303,
+    "EquipmentID": 3002,
+    "Quantity": 8
+  },
+  {
+    "RoomID": 304,
+    "EquipmentID": 3002,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 401,
+    "EquipmentID": 3002,
+    "Quantity": 17
+  },
+  {
+    "RoomID": 402,
+    "EquipmentID": 3002,
+    "Quantity": 3
+  },
+  {
+    "RoomID": 403,
+    "EquipmentID": 3002,
+    "Quantity": 2
+  },
+  {
+    "RoomID": 404,
+    "EquipmentID": 3002,
+    "Quantity": 1
+  },
+  {
+    "RoomID": 501,
+    "EquipmentID": 3002,
+    "Quantity": 3
+  }
+]

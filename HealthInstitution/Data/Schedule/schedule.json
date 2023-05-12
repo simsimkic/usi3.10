@@ -1,0 +1,176 @@
+[
+  {
+    "Id": 1,
+    "TimeOf": {
+      "Start": "2023-05-16T01:00:00",
+      "DurationOf": "00:15:00"
+    },
+    "DoctorUsername": "d",
+    "PatientUsername": "a",
+    "Type": 0,
+    "Status": 3,
+    "Anamnesis": {
+      "Symptoms": [],
+      "DiseasesHistory": [],
+      "Allergies": [],
+      "Report": ""
+    },
+    "RoomNumber": 301
+  },
+  {
+    "Id": 2,
+    "TimeOf": {
+      "Start": "2023-05-12T06:00:00",
+      "DurationOf": "00:15:00"
+    },
+    "DoctorUsername": "d",
+    "PatientUsername": "p",
+    "Type": 0,
+    "Status": 2,
+    "Anamnesis": {
+      "Symptoms": [],
+      "DiseasesHistory": [],
+      "Allergies": [],
+      "Report": ""
+    },
+    "RoomNumber": 201
+  },
+  {
+    "Id": 3,
+    "TimeOf": {
+      "Start": "2023-05-12T02:00:00",
+      "DurationOf": "00:15:00"
+    },
+    "DoctorUsername": "doctor",
+    "PatientUsername": "p",
+    "Type": 0,
+    "Status": 2,
+    "Anamnesis": {
+      "Symptoms": [
+        "ccc"
+      ],
+      "DiseasesHistory": [
+        "aaaa",
+        "bbbb",
+        "proba3"
+      ],
+      "Allergies": [
+        "bbb",
+        "proba4"
+      ],
+      "Report": "aaaabbbccc"
+    },
+    "RoomNumber": 303
+  },
+  {
+    "Id": 4,
+    "TimeOf": {
+      "Start": "2023-05-11T18:15:31.145101+02:00",
+      "DurationOf": "00:15:00"
+    },
+    "DoctorUsername": "d",
+    "PatientUsername": "tijana1234",
+    "Type": 0,
+    "Status": 2,
+    "Anamnesis": {
+      "Symptoms": [],
+      "DiseasesHistory": [],
+      "Allergies": [],
+      "Report": ""
+    },
+    "RoomNumber": 301
+  },
+  {
+    "Id": 5,
+    "TimeOf": {
+      "Start": "2023-05-12T04:00:00",
+      "DurationOf": "00:15:00"
+    },
+    "DoctorUsername": "d",
+    "PatientUsername": "a",
+    "Type": 0,
+    "Status": 0,
+    "Anamnesis": {
+      "Symptoms": [],
+      "DiseasesHistory": [],
+      "Allergies": [],
+      "Report": ""
+    },
+    "RoomNumber": 301
+  },
+  {
+    "Id": 5,
+    "TimeOf": {
+      "Start": "2023-05-11T19:30:00",
+      "DurationOf": "00:15:00"
+    },
+    "DoctorUsername": "d",
+    "PatientUsername": "a",
+    "Type": 0,
+    "Status": 0,
+    "Anamnesis": {
+      "Symptoms": [],
+      "DiseasesHistory": [],
+      "Allergies": [],
+      "Report": ""
+    },
+    "RoomNumber": 301
+  },
+  {
+    "Id": 6,
+    "TimeOf": {
+      "Start": "2023-05-11T20:15:00",
+      "DurationOf": "00:15:00"
+    },
+    "DoctorUsername": "d",
+    "PatientUsername": "a",
+    "Type": 0,
+    "Status": 0,
+    "Anamnesis": {
+      "Symptoms": [],
+      "DiseasesHistory": [],
+      "Allergies": [],
+      "Report": ""
+    },
+    "RoomNumber": 301
+  },
+  {
+    "Id": 7,
+    "TimeOf": {
+      "Start": "2023-05-13T11:30:00",
+      "DurationOf": "00:15:00"
+    },
+    "DoctorUsername": "d",
+    "PatientUsername": "a",
+    "Type": 0,
+    "Status": 0,
+    "Anamnesis": {
+      "Symptoms": [],
+      "DiseasesHistory": [],
+      "Allergies": [],
+      "Report": ""
+    },
+    "RoomNumber": 301
+  },
+  {
+    "Id": 5,
+    "TimeOf": {
+      "Start": "2023-05-11T23:15:57.5436796+02:00",
+      "DurationOf": "00:50:00"
+    },
+    "DoctorUsername": "d",
+    "PatientUsername": "p",
+    "Type": 1,
+    "Status": 3,
+    "Anamnesis": {
+      "Symptoms": [
+        "simptom 1",
+        "simptom 2"
+      ],
+      "DiseasesHistory": [],
+      "Allergies": [],
+      "Report": ""
+    },
+    "RoomNumber": 201
+  }
+]

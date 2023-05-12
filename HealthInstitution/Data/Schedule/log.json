@@ -1,0 +1,47 @@
+[
+  {
+    "PatientUsername": "p",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-10T16:42:38.8335053+02:00"
+  },
+  {
+    "PatientUsername": "p",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-10T17:03:49.6651795+02:00"
+  },
+  {
+    "PatientUsername": "p",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-10T17:05:39.9960466+02:00"
+  },
+  {
+    "PatientUsername": "p",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-10T17:08:37.5043343+02:00"
+  },
+  {
+    "PatientUsername": "a",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-11T13:44:53.2203061+02:00"
+  },
+  {
+    "PatientUsername": "a",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-11T19:16:29.7230295+02:00"
+  },
+  {
+    "PatientUsername": "a",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-11T19:17:16.7255426+02:00"
+  },
+  {
+    "PatientUsername": "a",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-11T20:15:04.7031011+02:00"
+  },
+  {
+    "PatientUsername": "a",
+    "RecordedAction": 0,
+    "TimeOf": "2023-05-11T20:22:58.4591081+02:00"
+  }
+]

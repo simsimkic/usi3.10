@@ -1,0 +1,39 @@
+﻿<Window x:Class="HealthInstitution.NurseView.NurseInitialView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.NurseView"
+        mc:Ignorable="d"
+        Title="Nurse View" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+
+        <Image Width="200" Height="200" Margin="77,104,523,130" Source="/Images/user.png"/>
+
+        <Label Name="info" Content="Nurse info" VerticalAlignment="Top" Width="Auto" Height="50"  FontSize="20" Margin="370,110,0,0"/>
+        <Label Name="username" Content="Username:" VerticalAlignment="Top" Width="100" Height="30" Margin="70,170,0,0" FontSize="15"/>
+        <Label Name="name" Content="Name:" Width="100" VerticalAlignment="Top" Height="30" Margin="70,204,0,0" FontSize="15"/>
+        <Label Name="surname" Content="Surname:" Width="100" VerticalAlignment="Top" Height="30" Margin="70,238,0,0" FontSize="15"/>
+        <Label Name="NameLabel" Content="{Binding Name}" VerticalAlignment="Top" Width="150" Height="30" Margin="300,204,0,0" FontSize="15"/>
+        <Label Name="UsernameLabel" Content="{Binding Username}" VerticalAlignment="Top" Width="150" Height="30" Margin="300,170,0,0" FontSize="15"/>
+        <Label Name="SurnameLabel" Content="{Binding Surname}" VerticalAlignment="Top" Width="150" Height="30" Margin="300,238,0,0" FontSize="15"/>
+
+        <Menu Grid.Row="0" Grid.ColumnSpan="2" DockPanel.Dock="Top" VerticalAlignment="Top" Background="Snow">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <DockPanel HorizontalAlignment="Stretch"/>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+
+            <MenuItem Header="Patient Review" x:Name="PatientReviewMenu" FontSize="14" Click="PatientReviewMenu_Click"></MenuItem>
+            <MenuItem Header="Urgent Appointments" x:Name="UrgentAppointmentMenu" FontSize="14" Click="UrgentAppointmentMenu_Click"></MenuItem>
+            <MenuItem Header="Log out" x:Name="LogOutMenu" FontSize="14" HorizontalAlignment="Right" Click="LogOutMenu_Click" ></MenuItem>
+
+        </Menu>
+
+        <Menu DockPanel.Dock="Bottom" VerticalAlignment="Bottom" Background="Snow">
+            <Label Name="NameSurnameDock"/>
+        </Menu>
+    </Grid>
+</Window>

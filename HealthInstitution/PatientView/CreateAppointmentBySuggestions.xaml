@@ -1,0 +1,73 @@
+﻿<Window x:Class="HealthInstitution.PatientView.CreateAppointmentBySuggestions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.PatientView"
+        mc:Ignorable="d"
+        Title="Suggest New Appointment" Height="450" Width="800" WindowStartupLocation="CenterScreen"
+        UseLayoutRounding="True"
+        ResizeMode="NoResize">
+    <Grid>
+        <Label Content="1. Select the last desired date: " HorizontalAlignment="Left" Margin="51,34,0,0" VerticalAlignment="Top" FontSize="15" />
+        <Label Content="3. Select a doctor: " HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontSize="15" />
+        <Label Content="2. Select the time you are available: " HorizontalAlignment="Left" Margin="51,119,0,0" VerticalAlignment="Top" FontSize="15" />
+        <Label Content="to: " HorizontalAlignment="Left" Margin="51,158,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="-0.663,2.296" />
+        <Label Content="(hours) " HorizontalAlignment="Left" Margin="109,184,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.742,0.544" Width="56" />
+        <Label Content="(minutes) " HorizontalAlignment="Left" Margin="190,184,0,0" VerticalAlignment="Top" FontSize="15" />
+        <Label Content="from: " HorizontalAlignment="Left" Margin="51,224,0,0" VerticalAlignment="Top" FontSize="15" />
+        <Label Content="(hours) " HorizontalAlignment="Left" Margin="109,249,0,0" VerticalAlignment="Top" FontSize="15" RenderTransformOrigin="0.742,0.544" Width="56" />
+        <Label Content="(minutes) " HorizontalAlignment="Left" Margin="190,249,0,0" VerticalAlignment="Top" FontSize="15" />
+        <Label Content="4. Select your priority: " HorizontalAlignment="Left" Margin="51,313,0,0" VerticalAlignment="Top" FontSize="15" />
+
+        <DatePicker Name="Calendar" SelectedDateFormat="Long" Margin="51,69,537,315"/>
+
+        <ComboBox x:Name = "ComboBoxHoursFrom" Text="hours" HorizontalAlignment = "Left" 
+         Margin = "110,160,0,0" VerticalAlignment = "Top" Width = "51" Background="White">
+        </ComboBox>
+
+        <ComboBox x:Name = "ComboBoxMinutesFrom" Text="minutes" HorizontalAlignment = "Left" 
+         Margin = "200,160,0,0" VerticalAlignment = "Top" Width = "51" Background="White" RenderTransformOrigin="-0.135,0.52">
+        </ComboBox>
+
+        <ComboBox x:Name = "ComboBoxHoursTo" Text="hours" HorizontalAlignment = "Left" 
+         Margin = "110,224,0,0" VerticalAlignment = "Top" Width = "51" Background="White">
+        </ComboBox>
+
+        <ComboBox x:Name = "ComboBoxMinutesTo" Text="minutes" HorizontalAlignment = "Left" 
+         Margin = "200,224,0,0" VerticalAlignment = "Top" Width = "51" Background="White" RenderTransformOrigin="-0.135,0.52">
+        </ComboBox>
+
+        <DataGrid Name="Table" Margin="328,69,32,78" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"  Width="*"/>
+                <DataGridTextColumn Header="Surname" Binding="{Binding Surname}" Width="*"/>
+                <DataGridTextColumn Header="Specialization" Binding="{Binding Specialization}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Margin="52,344,600,30" RenderTransformOrigin="0.493,3.988" Name="PriorityRadio">
+            <RadioButton FontSize="15" Name="DoctorIsPriority">Doctor</RadioButton>
+            <RadioButton FontSize="15" Name="TimeIsPriority" Height="51">Time</RadioButton>
+        </StackPanel>
+
+        <Button
+            Name="Finish"
+            Content="Finish"
+            Click="CompleteAction"
+            FontSize="13"
+            Margin="598,361,51,23"
+            Background="Snow"
+        />
+
+        <Button
+            Name="CancelButton"
+            Content="Cancel"
+            Click="CloseWindow"
+            FontSize="13"
+            Margin="350,361,299,23"
+            Background="Snow"
+        />
+
+    </Grid>
+</Window>

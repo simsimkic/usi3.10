@@ -1,0 +1,53 @@
+﻿<Window x:Class="HealthInstitution.PatientView.ReviewAppointmentsForPatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.PatientView"
+        mc:Ignorable="d"
+        Title="My Upcomming Appointments" Height="450" Width="900"  WindowStartupLocation="CenterScreen"
+        UseLayoutRounding="True"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <DataGrid Name="Table" Margin="67,35,67,128" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="60"/>
+                <DataGridTextColumn Header="Doctor Name" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Doctor Surname" Binding="{Binding Surname}" Width="*"/>
+
+                <DataGridTextColumn Header="Specialization" Binding="{Binding DoctorSpecialization}" Width="*"/>
+                <DataGridTextColumn Header="Date" Binding="{Binding StartDate}" Width="*"/>
+                <DataGridTextColumn Header="Time" Binding="{Binding StartTime}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+                <DataGridTextColumn Header="Room" Binding="{Binding RoomNumber}" Width="60"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button
+            Name="CancelAppointmentButton"
+            Content="Cancel appointment"
+            Click="CancelAppointment"
+            FontSize="13"
+            Margin="582,345,67,39"
+            Background="Snow"
+        />
+        <Button
+            Name="UpdateAppointmentButton"
+            Content="Change appointment"
+            Click="UpdateAppointment"
+            FontSize="13"
+            Margin="362,345,287,39"
+            Background="Snow"
+        />
+
+        <Button
+            Name="CloseButton"
+            Content="Close"
+            Click="CloseWindow"
+            FontSize="13"
+            Margin="67,345,582,39"
+            Background="Snow"
+        />
+    </Grid>
+</Window>

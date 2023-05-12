@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Tijana",
+    "Surname": "Mazinjanin",
+    "Username": "d",
+    "Password": "d",
+    "Specialization": "general"
+  },
+  {
+    "Name": "Bob",
+    "Surname": "Ross",
+    "Username": "doctor",
+    "Password": "doctor",
+    "Specialization": "surgeon"
+  }
+]

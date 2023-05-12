@@ -1,0 +1,73 @@
+﻿<Window x:Class="HealthInstitution.ManagerView.EquipmentReview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Equipment Review" Height="600" Width="1100" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Popup Name="FilterPopup" Width="240" Height="240" Placement="Bottom" StaysOpen="false">
+            <Border Background="Snow" BorderBrush="Gray" BorderThickness="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="4,6,4,0">
+                        <Button Content="Check all" Click="CheckAll"/>
+                        <Button Content="Uncheck all" Click="UncheckAll" Margin="6,0,6,0"/>
+                        <Button Content="Not in warehouse" Name ="WarehouseButton" Click="Warehouse"/>
+                    </StackPanel>
+                    <Separator BorderThickness="2" />
+                    <ListBox Name="PopupItems" Grid.Row="1" Margin="4,4,4,0">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsChecked}" Content="{Binding Title}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <Button Grid.Row="2" Margin="16,10,16,10" Click="ApplyButton">Apply all filters</Button>
+                </Grid>
+            </Border>
+        </Popup>
+        <DataGrid Name="Table" Margin="0, 0, 0, 26" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Equipment" Binding="{Binding Equipment}" Width="*"/>
+                <DataGridTextColumn Binding="{Binding EquipmentType}" Width="*">
+                    <DataGridTextColumn.Header>
+                        <DockPanel>
+                            <TextBlock Text="Equipment Type"/>
+                            <Button x:Name="FilterEquipmentType" Click="FilterClickEquipment" Margin="10,0,0,0">
+                                <Image Source="/Images/filter.png" Width="14" Height="14"/>
+                            </Button>
+                        </DockPanel>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Room" Binding="{Binding Room}" Width="*"/>
+                <DataGridTextColumn Binding="{Binding RoomType}" Width="*">
+                    <DataGridTextColumn.Header>
+                        <DockPanel>
+                            <TextBlock Text="Room Type"/>
+                            <Button x:Name="FilterRoomType" Click="FilterClickRoom" Margin="10,0,0,0">
+                                <Image Source="/Images/filter.png" Width="14" Height="14"/>
+                            </Button>
+                        </DockPanel>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Quantity}" Width="*">
+                    <DataGridTextColumn.Header>
+                        <DockPanel>
+                        <TextBlock Text="Quantity"/>
+                        <Button x:Name="FilterQuantity" Click="FilterClickQuantity" Margin="10,0,0,0">
+                            <Image Source="/Images/filter.png" Width="14" Height="14"/>
+                        </Button>
+                        </DockPanel>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox Name ="SearchBox" HorizontalAlignment="Right" Margin="0,0,10,4" VerticalAlignment="Bottom" Width="240" KeyUp="Search"/>
+        <TextBlock Text="Search" HorizontalAlignment="Right" Margin="0, 0, 262, -1" VerticalAlignment="Bottom" Height="23" />
+    </Grid>
+</Window>

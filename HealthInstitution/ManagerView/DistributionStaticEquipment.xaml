@@ -1,0 +1,46 @@
+﻿<Window x:Class="HealthInstitution.ManagerView.DistributionStaticEquipment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthInstitution.ManagerView" xmlns:componentmodel="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.EventBasedAsync"
+        mc:Ignorable="d"
+        Title="Distribute static equipment" Height="500" Width="900" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Margin="10,6,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="50" Grid.Column="0" FontSize="14">From:</Label>
+        <ComboBox Name="FromRoom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,10,0,0" Width="160" Height="20" Grid.Column="0" SelectionChanged="FromRoomChanged"/>
+        <DataGrid Name="FromTable" Margin="6,40,8,6" Grid.Column="0" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Equipment" Binding="{Binding Equipment}" Width="2*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Equipment type" Binding="{Binding EquipmentType}" Width="2*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Reserved" Binding="{Binding ReservedQuantity}" Width="*" IsReadOnly="True"/>
+                <DataGridTemplateColumn Header="Move" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding QuantityToMove, UpdateSourceTrigger=PropertyChanged}" PreviewTextInput="NumericColumn" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label Margin="10,6,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="30" Grid.Column="1" FontSize="14">To:</Label>
+        <ComboBox Name="ToRoom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,10,0,0" Width="160" Height="20" Grid.Column="1" SelectionChanged="ToRoomChanged"/>
+        <DataGrid Name="ToTable" Margin="8,40,6,6" Grid.Column="1" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Equipment" Binding="{Binding Equipment}" Width="2*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Equipment type" Binding="{Binding EquipmentType}" Width="2*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="On the way" Binding="{Binding OnTheWayQuantity}" Width="*" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DatePicker Name="DatePicker" SelectedDateFormat="Short" Grid.Column="1" Height="26" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,8,0,0"/>
+        <Button Name="DistributeButton" Click="Distribute" Grid.Column="1" Width="80" Height="26" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,7,10,0" FontSize="14">Distribute</Button>
+    </Grid>
+</Window>
